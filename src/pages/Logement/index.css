@@ -1,0 +1,9 @@
+.logement {
+  margin: 0 20px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .logement {
+    margin: 0 100px;
+  }
+}

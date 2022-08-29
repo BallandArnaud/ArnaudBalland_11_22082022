@@ -1,0 +1,18 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 1024px) {
+  
+  .gallery {
+    background-color: #F6F6F6;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 50px 0 50px;
+    margin-top: 50px;
+    border-radius: 25px;
+  }
+
+}
