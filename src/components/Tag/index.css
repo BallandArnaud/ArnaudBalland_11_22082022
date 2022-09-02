@@ -1,0 +1,18 @@
+.tag {
+  color: #FFFFFF;
+  background-color: #FF6060;
+  font-size: 0.625rem;
+  padding: 5px 22px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.tag:last-child {
+  margin-right: 0px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .tag {
+    font-size: 0.875rem;
+  }
+}

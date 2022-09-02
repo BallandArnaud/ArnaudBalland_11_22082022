@@ -1,0 +1,14 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.logement-rating{
+  color: #E3E3E3;
+  margin-right: 5px;
+}
+
+.logement-rating:last-child{
+  margin-right: 0;
+}
+
+.rating-checked {
+  color: #FF6060;
+}
