@@ -19,7 +19,7 @@ function Logement() {
         setLoading(false)
       })
       .catch((err) => console.log('Erreur : ', err))
-  }, [])
+  }, [logementId])
 
   if (isLoading) {
     return null
@@ -36,8 +36,8 @@ function Logement() {
   return (
     <main className="logement">
       <Slider images={logement.pictures} />
-      <div className="bloc">
-        <div className="logement-header">
+      <div className="logement-header">
+        <div className="logement-information-1">
           <h1 className="logement-title">{logement.title}</h1>
           <p className="logement-location">{logement.location}</p>
           <div className="tags">
@@ -47,7 +47,7 @@ function Logement() {
           </div>
         </div>
 
-        <div className="logement-information">
+        <div className="logement-information-2">
           <div className="logement-ratings">
             <Rating rating={logement.rating} />
           </div>

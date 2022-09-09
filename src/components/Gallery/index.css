@@ -6,12 +6,13 @@
 @media only screen and (min-width: 1024px) {
   
   .gallery {
-    background-color: #F6F6F6;
+    background-color: var(--secondary-background);
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 50px 50px 0 50px;
     margin-top: 50px;
+    margin-bottom: 30px;
     border-radius: 25px;
   }
 

@@ -1,32 +1,33 @@
 .accordion {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .accordion-btn {
   position: relative;
-  background-color: #FF6060;
-  color: #FFFFFF;
+  background-color: var(--primary-color);
+  color: var(--text-color-light);
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
   text-align: left;
-  outline: none;
   border-radius: 10px;
   font-size: 0.8125rem;
   transition: 0.4s;
   margin-bottom: 20px;
 }
 
-.accordion-active, .accordion-btn:hover { 
-  background-color: #e55656; 
+.accordion-btn[data-opened="true"], .accordion-btn:hover { 
+  background-color: var(--primary-color-dark); 
 }
 
 .accordion-btn:after {
   content: url("data:image/svg+xml,<svg width='16' height='10' viewBox='0 0 16 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1.3705 0.736755L0.0120851 2.10285L7.61003 9.69312L15.208 2.09518L13.8495 0.736756L7.61003 6.97628L1.3705 0.736755Z' fill='white'/></svg>");
   width: 16px;
   height: 10px;
-  color: #FFFFFF;
+  color: var(--text-color-light);
   font-weight: bold;
   float: right;
   position: absolute;
@@ -40,20 +41,24 @@
 }
 
 .accordion-panel {
-  color: #FF6060;
-  background-color: #F6F6F6;
+  color: var(--primary-color);
+  background-color: var(--secondary-background);
   font-size: 0.75rem;
   margin-top: -25px;
-  padding: 20px 18px;
+  margin-bottom: 20px;
+  padding: 30px 18px;
   border-radius: 5px;
   overflow: hidden;
+  flex: 1;
 }
 
 .accordion-panel p {
-  line-height: 25px;
+  line-height: 17px;
+  margin: 0;
 }
 
 .accordion-panel ul {
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -68,15 +73,15 @@
 
 @media only screen and (min-width: 1024px) {
 
-  .accordion {
-    width: 45%;
-  }
-
   .accordion-title {
     font-size: 1.125rem;
   }
 
   .accordion-panel {
     font-size: 1.125rem;
+  }
+
+  .accordion-panel p {
+    line-height: 25px;
   }
 }

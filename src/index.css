@@ -1,24 +1,42 @@
 @import-normalize;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 :root {
   --primary-color : #FF6060;
+  --primary-color-dark : #e55656;
+  
   --primary-background : #FFFFFF;
   --secondary-background : #F6F6F6;
+
+  --text-color-light: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+main {
+  margin: 0 20px;
 }
 
 a{
   color: var(--primary-color);
   text-decoration: none;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    margin: 0 100px;
+  }
 }

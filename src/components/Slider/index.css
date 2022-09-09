@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   height: 255px;
+  margin-bottom: 15px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -14,13 +15,14 @@
 
 .slider-prev,
 .slider-next {
-  position: absolute;
+  color: var(--primary-background);
   background-color: transparent;
+  /* font-size: 1.25rem; */
+  position: absolute;
   top: 50%;
+  padding: 0;
+  transform: translateY(-50%);
   border: none;
-  width: 20px;
-  color: #FFFFFF;
-  font-size: 1.25rem;
   transition: background .3s ease;
 }
 
@@ -38,8 +40,28 @@
   right: 0;
 }
 
+.slider-arrow-left,
+.slider-arrow-right {
+  width: 12px;
+  height: auto;
+  padding: 10px;
+}
+
+.slider-arrow-right {
+  transform: rotateY(-180deg);
+}
+
 @media only screen and (min-width: 1024px) {
+  
   .slider {
     height: 415px;
+    margin-bottom: 25px;
+  }
+
+  .slider-arrow-left,
+  .slider-arrow-right {
+    width: 45px;
+    height: auto;
+    padding: 10px;
   }
 }

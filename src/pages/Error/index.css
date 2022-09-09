@@ -20,12 +20,14 @@
 
 .error-link {
   font-size: 0.875rem;
+  display: block;
+  margin-bottom: 30px;
 }
 
 @media only screen and (min-width: 1024px) {
   .error-title {
     font-size: 18rem;
-    margin-top: 175px;
+    margin-top: 130px;
     margin-bottom: 60px;
   }
 

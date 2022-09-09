@@ -16,8 +16,6 @@ function Home() {
       .catch((err) => console.log('Erreur : ', err))
   }, [])
 
-  console.log('Logements', logements)
-
   const bannerTitle = 'Chez vous, partout et ailleurs'
   return (
     <main className="home">

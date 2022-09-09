@@ -1,6 +1,6 @@
 .tag {
-  color: #FFFFFF;
-  background-color: #FF6060;
+  color: var(--primary-background);
+  background-color: var(--primary-color);
   font-size: 0.625rem;
   padding: 5px 22px;
   margin-right: 10px;

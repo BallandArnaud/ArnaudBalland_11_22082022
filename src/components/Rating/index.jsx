@@ -2,21 +2,18 @@ import './index.css'
 
 function Rating(props) {
   const rating = Number(props.rating)
-  const stars = Array.from({ length: 5 }, (_, i) => i + 1)
+  const stars = Array.from({ length: 5 }, (_, i) => i + 1) //Pour générer une séquence de nombres
 
   return (
-    <div>
+    <>
       {stars.map((s) =>
         s > rating ? (
-          <span key={s} className="fa fa-star logement-rating"></span>
+          <span key={s} className="fa fa-star rating"></span>
         ) : (
-          <span
-            key={s}
-            className="fa fa-star logement-rating rating-checked"
-          ></span>
+          <span key={s} className="fa fa-star rating rating-checked"></span>
         )
       )}
-    </div>
+    </>
   )
 }
 
