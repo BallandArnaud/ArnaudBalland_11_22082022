@@ -17,7 +17,6 @@
 .slider-next {
   color: var(--primary-background);
   background-color: transparent;
-  /* font-size: 1.25rem; */
   position: absolute;
   top: 50%;
   padding: 0;
@@ -42,7 +41,7 @@
 
 .slider-arrow-left,
 .slider-arrow-right {
-  width: 12px;
+  width: 36px;
   height: auto;
   padding: 10px;
 }
@@ -61,7 +60,5 @@
   .slider-arrow-left,
   .slider-arrow-right {
     width: 45px;
-    height: auto;
-    padding: 10px;
   }
 }
