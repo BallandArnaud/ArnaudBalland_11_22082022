@@ -10,7 +10,7 @@ function Home() {
   const [logements, setLogements] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:3000/logements.json')
+    fetch('/logements.json')
       .then((res) => res.json())
       .then((res) => setLogements(res))
       .catch((err) => console.log('Erreur : ', err))
